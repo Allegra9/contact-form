@@ -1,0 +1,19 @@
+<div>
+  <%= link_to "Cancel", user_path %>
+</div>
+
+<h1>Edit <%= @user.name %> profile: </h1>
+
+<% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <li style="color:red;"> <%= error %> </li>
+  <% end %>
+<% end %>
+
+<br></br>
+
+<%= render "form" %>
+
+<%= form_tag user_path(@user), method: "delete" do %>
+  <%= submit_tag "Delete" %>
+<% end %>

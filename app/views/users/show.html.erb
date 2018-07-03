@@ -1,0 +1,17 @@
+<div>
+  <%= link_to "Back to all users", users_path %>
+</div>
+
+<h3> <%= @user.name %>'s profile:</h3>
+
+<div>
+    Name: <%= @user.name %><br>
+    Email: <%= @user.email %><br>
+    Likes polar bears? <%= @user.likes_polar_bears %><br>
+    Next move: <%= @user.next_country_to_live %><br>
+    <br></br>
+</div>
+
+<div>
+  <%= link_to "EDIT", edit_user_path %>
+</div>

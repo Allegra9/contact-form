@@ -1,0 +1,26 @@
+<%= form_for @user do |f| %>
+  <%= f.label :name %>:
+  <%= f.text_field :name %>
+  <br />
+  <%= f.label :email %>:
+  <%= f.text_field :email %>
+  <br />
+  <%= f.label :likes_polar_bears %>?
+  <%= f.check_box :likes_polar_bears, {}, "true", "false" %>
+  <br />
+  <%= f.label :next_country_to_live %>:
+  <%= f.select :next_country_to_live,
+  [
+    "Mother Earth",
+    "Free Forest",
+    "The Clean Air Valley",
+    "Laplandija",
+    "Beach and Sun Land",
+    "The Green Fields",
+    "Snowland",
+    "other"
+  ] %>
+  <br></br>
+
+  <%= f.submit %>
+<% end %>

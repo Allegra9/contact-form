@@ -1,0 +1,15 @@
+<div>
+  <%= link_to "Cancel", users_path %>
+</div>
+
+<h1>New user:</h1>
+
+<% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <li style="color:red;"> <%= error %> </li>
+  <% end %>
+<% end %>
+
+<br></br>
+
+<%= render "form" %>
