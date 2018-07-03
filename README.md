@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+My blog post on how to make this contact form:
 
-Things you may want to cover:
+Rails CRUD contact form in X easy steps
+https://medium.com/@allegra9/rails-crud-contact-form-in-x-easy-steps-6dc05d073682
 
-* Ruby version
 
-* System dependencies
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
